@@ -1,0 +1,68 @@
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="flower.css">
+    
+</head>
+<body>
+	<div class="wrap">
+		<div align="center" class="header">				
+			<h1>WELCOME</h1>
+			<p>HALAMAN WEBSITE RIKE</p>
+		</div>
+		<div class="badan">			
+			<div class="sidebar">
+				
+				<dl>
+					<dd><a style="text-decoration: none; color: black;" href="HOME.html">Home</a></dd>
+                    <br />
+                    <br />
+                    <br />
+					<dd><a style="text-decoration: none; color: black;" href="DATATABEL.html">Data Table</a></dd>
+                    <br />
+                    <br />
+                    <br />
+					<dd><a style="text-decoration: none; color: black;" href="FORMULIR.html">Formulir</a></dd>
+                    <br />
+                    <br />
+                    <br />
+					<dd><a style="text-decoration: none; color: black;" href="HOME.html">Log Out</a></dd>				
+				</dl>
+			</div>
+			<div class="content">
+				
+                <form align="center" name="input" action="proses.php" method="get" onsubmit="return ValidateForm">
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    Username 
+                    <dt><input type="text" name="Username" required/></dt>
+                    <br />
+                    Password    
+                    <dt><input type="text" name="Password" required/></dt>
+                    <br />
+                    <input align="left" type="submit" value="submit" />
+                    
+                </form>
+			</div>
+            
+		</div>
+		<div class="clear"></div>
+		
+	</div>
+    <script>
+    function ValidateForm() {
+        var Username=document.getElementById("Username").value;
+        var Password= document.getElementById("Password").value;
+        if (Username!= "" && Password!="") {
+            return true;
+        }else{
+            alert('Anda harus mengisi data dengan lengkap !');
+        }
+    }
+    </script>
+</body>
+</html>
